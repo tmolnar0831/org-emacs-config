@@ -742,7 +742,9 @@ The =emacsclient= can connect to the Emacs process and tell it to visit a file.
 #+BEGIN_SRC emacs-lisp 
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline "~/stuff/organizer/inbox.org" "Tasks")
-         "* TODO %?\nDEADLINE: %t")))
+         "* TODO %?\nDEADLINE: %t")
+        ("n" "Meeting notes" entry (file+headline "~/stuff/organizer/inbox.org" "Meetings")
+         (file "~/stuff/organizer/templates/meeting_notes.org"))))
 #+END_SRC
 
 *** Refile must look deeper into headers
