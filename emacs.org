@@ -744,7 +744,7 @@ The =emacsclient= can connect to the Emacs process and tell it to visit a file.
       '(("t" "Todo" entry (file+headline "~/stuff/organizer/inbox.org" "Tasks")
          "* TODO %?\nDEADLINE: %t")
         ("n" "Meeting notes" entry (file+headline "~/stuff/organizer/inbox.org" "Meetings")
-         (file "~/stuff/organizer/templates/meeting_notes.org"))))
+         (file "~/stuff/org_templates/meeting_notes.org"))))
 #+END_SRC
 
 *** Refile must look deeper into headers
