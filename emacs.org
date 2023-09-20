@@ -1,4 +1,4 @@
-* Start
+* Start here
 =~/.emacs=:
 
 #+BEGIN_EXAMPLE
@@ -251,11 +251,6 @@ The =emacsclient= can connect to the Emacs process and tell it to visit a file.
 (setq diary-file "~/stuff/organizer/diary")
 #+end_src
 ** General major and minor modes configuration
-*** Global undo tree
-#+BEGIN_SRC emacs-lisp
-;(global-undo-tree-mode)
-#+END_SRC
-
 *** Show line numbers only in major programming modes
 #+BEGIN_SRC emacs-lisp
 (setq global-linum-mode nil)
@@ -624,9 +619,9 @@ The =emacsclient= can connect to the Emacs process and tell it to visit a file.
 
 *** Habit tracking
 #+BEGIN_SRC emacs-lisp
-(setq org-habit-preceding-days 21)
-(setq org-habit-following-days 5)
-(setq org-habit-graph-column 54)
+;(setq org-habit-preceding-days 21)
+;(setq org-habit-following-days 5)
+;(setq org-habit-graph-column 54)
 #+END_SRC
 
 *** Display tags farther from the task
@@ -836,7 +831,6 @@ The =emacsclient= can connect to the Emacs process and tell it to visit a file.
 #+BEGIN_SRC emacs-lisp
 (setq org-todo-state-tags-triggers
       (quote (("WAIT" ("wait" . t))
-              ("MEETING" ("wait"))
               ("TODO" ("wait"))
               ("NEXT" ("wait"))
               ("CANCELED" ("wait")))))
