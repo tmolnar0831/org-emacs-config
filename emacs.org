@@ -1,4 +1,4 @@
-* Start here
+[>65;7006;1c* Start here
 =~/.emacs=:
 
 #+BEGIN_EXAMPLE
@@ -248,7 +248,7 @@ The =emacsclient= can connect to the Emacs process and tell it to visit a file.
 
 *** Diary file
 #+begin_src emacs-lisp
-(setq diary-file "~/stuff/organizer/diary")
+(setq diary-file "~/OneDrive/Documents/org/organizer/diary")
 #+end_src
 ** General major and minor modes configuration
 *** Show line numbers only in major programming modes
@@ -418,8 +418,8 @@ The =emacsclient= can connect to the Emacs process and tell it to visit a file.
 ** Agenda
 *** Agenda files source directory
 #+BEGIN_SRC emacs-lisp 
-(if (file-directory-p "~/stuff/organizer")
-    (setq org-agenda-files '("~/stuff/organizer/")))
+(if (file-directory-p "~/OneDrive/Documents/org/organizer")
+    (setq org-agenda-files '("~/OneDrive/Documents/org/organizer/")))
 #+END_SRC
 
 *** Custom Agenda Emacs Lisp functions
@@ -527,7 +527,7 @@ The =emacsclient= can connect to the Emacs process and tell it to visit a file.
                       (org-agenda-skip-function 'tmolnar/skip-projects)))
           (tags-todo "/!+WAIT"
                      ((org-agenda-overriding-header "Waiting items"))))
-         ((org-agenda-files '("~/stuff/work/"))))
+         ((org-agenda-files '("~/OneDrive/Documents/org/work/"))))
         ("gp" "Personal Agenda (Personal life todos)"
          ((agenda)
           (tags-todo "/!+NEXT"
@@ -540,7 +540,7 @@ The =emacsclient= can connect to the Emacs process and tell it to visit a file.
                       (org-agenda-skip-function 'tmolnar/skip-projects)))
           (tags-todo "/!+WAIT"
                      ((org-agenda-overriding-header "Waiting items"))))
-         ((org-agenda-files '("~/stuff/organizer"))))
+         ((org-agenda-files '("~/OneDrive/Documents/org/organizer"))))
         ("d" .  "Deadlines")
         ("dd" "Upcoming deadlines in one screen" agenda ""
          ((org-agenda-entry-types '(:deadline))
@@ -741,9 +741,9 @@ The =emacsclient= can connect to the Emacs process and tell it to visit a file.
 *** Capture templates
 #+BEGIN_SRC emacs-lisp 
 (setq org-capture-templates
-      '(("t" "Todo" entry (file+headline "~/stuff/organizer/inbox.org" "Tasks")
+      '(("t" "Todo" entry (file+headline "~/OneDrive/Documents/org/organizer/inbox.org" "Tasks")
          "* TODO %?\nDEADLINE: %t")
-        ("n" "Meeting notes" entry (file+headline "~/stuff/organizer/inbox.org" "Meetings")
+        ("n" "Meeting notes" entry (file+headline "~/OneDrive/Documents/org/organizer/inbox.org" "Meetings")
          (file "~/stuff/org_templates/meeting_notes.org"))))
 #+END_SRC
 
@@ -754,7 +754,7 @@ The =emacsclient= can connect to the Emacs process and tell it to visit a file.
 
 *** Default capture file
 #+BEGIN_SRC emacs-lisp 
-(setq org-default-notes-file "~/stuff/organizer/inbox.org")
+(setq org-default-notes-file "~/OneDrive/Documents/org/organizer/inbox.org")
 #+END_SRC
 
 *** Refile to the first element of the tree
