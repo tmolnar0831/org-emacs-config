@@ -51,6 +51,11 @@
 (setq calendar-daylight-time-zone-name "CEST")
 #+END_SRC
 
+#+begin_src emacs-lisp
+;; Set the text size
+(set-face-attribute 'default nil :height 140)
+#+end_src
+
 *** No toolbar
 #+BEGIN_SRC emacs-lisp
 (tool-bar-mode -1)
