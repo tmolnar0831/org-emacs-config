@@ -35,11 +35,15 @@
 *** Load and configure the Emacs theme
 #+BEGIN_SRC emacs-lisp
 ;; Set the starting theme
-(load-theme 'base16-ocean t)
+(load-theme 'chocolate t)
 
 ;; Highlight color for the current theme
 (require 'hl-line)
 ;(set-face-background 'hl-line "#e2e2e2")
+
+(custom-set-faces '(default ((t (:background "#040100")))))
+(custom-set-faces '(region ((t (:background "#170a02")))))
+(set-face-background hl-line-face "#261407")
 
 ;; Use the "normal" syntax highlight under the hl-line
 (set-face-foreground 'highlight nil)
